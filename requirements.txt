@@ -13,6 +13,7 @@ tqdm==4.66.1
 
 # Web Framework
 streamlit==1.28.1
+streamlit-extras==0.2.7
 
 # Image Processing
 Pillow==10.0.1
