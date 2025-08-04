@@ -12,6 +12,10 @@ import zipfile
 from PIL import Image
 import numpy as np
 import cv2
+from streamlit_extras.switch_page_button import switch_page
+
+if st.button("Go to Detection Page"):
+    switch_page("🔍 Face Recognition")
 
 # Add the current directory to path to import the main model
 sys.path.append(os.path.dirname(os.path.abspath("C:/Users/NISHA GOSWAMI/Downloads/ImageRecognitionSystem.py")))
@@ -521,4 +525,5 @@ def show_settings_page(recognizer):
         st.write("**Streamlit Version:**", st.__version__)
 
 if __name__ == "__main__":
+
     main() 
